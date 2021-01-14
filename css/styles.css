@@ -1,0 +1,318 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #080808;
+  color: white;
+}
+
+.section {
+  padding: 100px 0 30px;
+}
+
+.container h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+#hero {
+  color: white;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background: url(../images/hero.jpeg) no-repeat center center;
+  background-size: cover;
+}
+
+#hero h1 {
+  font-size: 95px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#hero div {
+  text-align: center;
+}
+
+#hero div a {
+  color: white;
+  font-size: 26px;
+  padding-left: 15px;
+}
+
+#aboutPhoto {
+  text-align: center;
+}
+
+#aboutPhoto img {
+  width: 70%;
+  height: auto;
+}
+
+#aboutText p {
+  font-size: 18px;
+}
+
+#videos {
+  text-align: center;
+}
+
+.smallVideoContainer {
+  padding: 60px 0;
+}
+
+.videoImage {
+  position: relative;
+}
+
+.videoImage:hover {
+  cursor: pointer;
+}
+
+.videoImage.smallVideo {
+  height: 300px;
+}
+
+.videoImage.largeVideo {
+  height: 550px;
+}
+
+.videoImage.acc {
+  background: url(../images/accAd.png) no-repeat center center;
+  background-size: cover;
+}
+
+.videoImage.virginiaTech {
+  background: url(../images/vt3.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.videoImage.maryland {
+  background: url(../images/md.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.videoImage.wvu {
+  background: url(../images/wvuimg.png) no-repeat center center;
+  background-size: cover;
+}
+
+.playButton {
+  font-size: 100px;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  -webkit-transform: translateY(-50%, -50%);
+          transform: translateY(-50%, -50%);
+}
+
+.youtubeVideo {
+  margin-right: 10px;
+}
+
+.largeVideo .videoImage {
+  height: 550px;
+}
+
+#music a {
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+#music p {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+#tracks audio {
+  width: 100%;
+}
+
+#tracks h2 {
+  font-size: 20px;
+}
+
+#tracks h3 {
+  font-size: 14px;
+}
+
+#tracks .row {
+  padding-bottom: 20px;
+}
+
+#samples a {
+  color: white;
+  font-weight: bold;
+}
+
+#gallery .col {
+  height: 400px;
+  padding-bottom: 30px;
+}
+
+#gallery img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#contact {
+  height: 500px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 29, 56, 0.6)), to(#001d38)), url(../images/relay.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 29, 56, 0.6) 0%, #001d38 100%), url(../images/relay.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#contact div {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#contact a {
+  font-size: 30px;
+  padding-right: 20px;
+  color: white;
+}
+
+.btn {
+  border-radius: 10px;
+  color: #001d38;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: rgba(0, 29, 56, 0);
+  color: white;
+  border: solid #fff 1px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #001d38;
+}
+
+.footer .copywrite {
+  padding-left: 200px;
+}
+
+.footer .copywrite p {
+  color: #fff;
+}
+
+.footerLinks ul li {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+.footerLinks ul li a {
+  color: #fff;
+}
+
+@media (min-width: 576px) {
+  .rounded-nav {
+    border-radius: 50rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .rounded-nav .nav-link {
+    border-radius: 50rem !important;
+    color: #080808;
+  }
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #cecece;
+  color: #080808;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    width: 80%;
+  }
+  #hero h1 {
+    font-size: 50px;
+  }
+  .smallVideoContainer {
+    visibility: hidden;
+    display: none;
+  }
+  #aboutPhoto {
+    visibility: hidden;
+    display: none;
+  }
+  .videoImage {
+    height: 100px;
+  }
+  .videoImage.largeVideo {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  .footer .copywrite {
+    visibility: hidden;
+    display: none;
+  }
+  .footerLinks {
+    text-align: center;
+  }
+}
+
+.tracksHero {
+  position: relative;
+  height: 75%;
+}
+
+.tracksHero .row {
+  height: 100%;
+}
+
+.tracksHero a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.tracksHeroPhoto {
+  background: url(../images/tracksHero.png) no-repeat center center;
+  background-size: cover;
+}
+
+.tracksHeroText {
+  padding: 150px 100px 0px;
+}
+/*# sourceMappingURL=styles.css.map */

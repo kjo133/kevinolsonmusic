@@ -1,0 +1,323 @@
+$color-black: rgb(8, 8, 8);
+
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+  background-color: $color-black;
+  color: white;
+}
+
+.section {
+  padding: 100px 0 30px;
+}
+
+.container {
+  h1 {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+#hero {
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: url(../images/hero.jpeg) no-repeat center center;
+  background-size: cover;
+  h1 {
+    font-size: 95px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  div {
+    text-align: center;
+    a {
+      color: white;
+      font-size: 26px;
+      padding-left: 15px;
+    }
+  }
+}
+
+#aboutPhoto {
+  text-align: center;
+  img {
+    width: 70%;
+    height: auto;
+  }
+}
+#aboutText {
+  p {
+    font-size: 18px;
+  }
+}
+
+#videos {
+  text-align: center;
+}
+
+.smallVideoContainer {
+  padding: 60px 0;
+}
+
+.videoImage {
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.smallVideo {
+    height: 300px;
+  }
+  &.largeVideo {
+    height: 550px;
+    // margin-bottom: 60px;
+  }
+
+  &.acc {
+    background: url(../images/accAd.png) no-repeat center center;
+    background-size: cover;
+  }
+  &.virginiaTech {
+    background: url(../images/vt3.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  &.maryland {
+    background: url(../images/md.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  &.wvu {
+    background: url(../images/wvuimg.png) no-repeat center center;
+    background-size: cover;
+  }
+}
+
+.playButton {
+  font-size: 100px;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  transform: translateY(-50%, -50%);
+}
+
+.youtubeVideo {
+  margin-right: 10px;
+}
+
+.largeVideo {
+  .videoImage {
+    height: 550px;
+  }
+}
+
+#music {
+  a {
+    padding-left: 15px;
+
+    font-weight: bold;
+  }
+  p {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+}
+
+#tracks {
+  audio {
+    width: 100%;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .row {
+    padding-bottom: 20px;
+  }
+}
+
+#samples a {
+  color: white;
+  font-weight: bold;
+}
+
+#gallery {
+  .col {
+    height: 400px;
+    padding-bottom: 30px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+#contact {
+  height: 500px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 29, 56, 0.6) 0%,
+      #001d38 100%
+    ),
+    url(../images/relay.jpg);
+  background-size: cover;
+  position: relative;
+  div {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  a {
+    font-size: 30px;
+    padding-right: 20px;
+    color: white;
+  }
+}
+
+.btn {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #001d38;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: rgba(0, 29, 56, 0);
+  color: white;
+  border: solid #fff 1px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+// FOOTER
+.footer {
+  background-color: #001d38;
+}
+.footer .copywrite {
+  padding-left: 200px;
+  p {
+    color: #fff;
+  }
+}
+
+.footerLinks ul li {
+  display: inline-block;
+  padding-right: 30px;
+  a {
+    color: #fff;
+  }
+}
+
+// Tabs
+@media (min-width: 576px) {
+  .rounded-nav {
+    border-radius: 50rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .rounded-nav .nav-link {
+    border-radius: 50rem !important;
+    color: $color-black;
+  }
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #cecece;
+  color: $color-black;
+}
+
+//Mobile
+@media screen and (max-width: 768px) {
+  .section {
+    width: 80%;
+  }
+  #hero {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  .smallVideoContainer {
+    visibility: hidden;
+    display: none;
+  }
+  #aboutPhoto {
+    visibility: hidden;
+    display: none;
+  }
+  .videoImage {
+    height: 100px;
+    &.largeVideo {
+      height: 300px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .footer .copywrite {
+    visibility: hidden;
+    display: none;
+  }
+
+  .footerLinks {
+    text-align: center;
+  }
+}
+
+// Tracks Page
+.tracksHero {
+  position: relative;
+  height: 75%;
+  .row {
+    height: 100%;
+  }
+  a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+.tracksHeroPhoto {
+  background: url(../images/tracksHero.png) no-repeat center center;
+  background-size: cover;
+}
+.tracksHeroText {
+  padding: 150px 100px 0px;
+}
