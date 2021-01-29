@@ -6,8 +6,8 @@ $('.videoImage').on('click', function(){
 
 
 
-$('.acc').hover(function(){
-    console.log('hovered');
-},function(){
-    console.log('not hovered');
-})
+// $('.acc').hover(function(){
+//     console.log('hovered');
+// },function(){
+//     console.log('not hovered');
+// })
