@@ -1,10 +1,10 @@
 console.log('testing hello');
 
 //live
-var folder = "../tracks/";
+// var folder = "../tracks/";
 
 //local
-// var folder="/tracks"
+ var folder="/tracks"
 
 $.ajax({
     url : folder,
@@ -18,10 +18,12 @@ $.ajax({
                 console.log('value ' + folder+val);
                 
                 $("#tracks").append(
-                    "<div class='row'><div class='col'><h2>"+fileName+"</h2><audio preload='auto' controls><source src=' "  +folder+ val +
+                    "<div class='row'><div class='col'><h2>"+fileName+"</h2><audio preload='auto' controls><source src=' "  + val +
                     "' /> </audio></div></div>"
                     );
             }
         });
     }
 });
+
+//for local remove +folder+
