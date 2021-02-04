@@ -13,6 +13,7 @@ body {
 
 .section {
   padding: 100px 0 30px;
+  overflow: hidden;
 }
 
 .container h1 {
@@ -221,6 +222,25 @@ body {
   text-decoration: none;
 }
 
+#places {
+  margin-bottom: 100px;
+}
+
+#places .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#places img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .footer {
   background-color: #001d38;
 }
@@ -282,6 +302,22 @@ body {
   .videoImage.largeVideo {
     height: 300px;
     margin-bottom: 30px;
+  }
+  #places {
+    margin-bottom: 100px;
+  }
+  #places .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #places img {
+    width: 70px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .footer .copywrite {
     visibility: hidden;

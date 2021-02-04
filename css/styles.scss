@@ -21,6 +21,7 @@ body {
 
 .section {
   padding: 100px 0 30px;
+  overflow: hidden;
 }
 
 .container {
@@ -226,6 +227,19 @@ body {
   text-decoration: none;
 }
 
+//Places
+#places {
+  margin-bottom: 100px;
+  .col {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
 // FOOTER
 .footer {
   background-color: #001d38;
@@ -264,7 +278,7 @@ body {
   color: $color-black;
 }
 
-//Mobile
+//Mobile Styles
 @media screen and (max-width: 768px) {
   .section {
     width: 80%;
@@ -287,6 +301,18 @@ body {
     &.largeVideo {
       height: 300px;
       margin-bottom: 30px;
+    }
+  }
+
+  #places {
+    margin-bottom: 100px;
+    .col {
+      display: flex;
+      justify-content: center;
+    }
+    img {
+      width: 70px;
+      object-fit: contain;
     }
   }
 
